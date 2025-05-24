@@ -1,0 +1,28 @@
+@import url('destyle.css');
+
+.menu {
+    display: flex;
+    gap: 10px;
+    color:rgb(43, 137, 225);
+}
+
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+nav h1 {
+    font-size:1.5em;
+    font-weight:bold;
+    color:rgb(43, 137, 225);
+}
+
+a:not(.logo):hover {
+    color:#002871;
+    text-decoration: underline;
+}
+
+
