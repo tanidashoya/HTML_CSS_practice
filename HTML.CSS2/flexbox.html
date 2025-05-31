@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: #36bbe7;
+            padding: 20px;
+            flex-basis: 200px;
+        }
+
+        /*flex-direction: row（主軸＝横方向）
+            アイテムが横に並ぶ
+            交差軸＝縦方向
+            align-items: center → 各アイテムが「縦方向の中央」に配置される*/
+        .container {
+            display: flex;
+            gap: 10px;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row nowrap; 
+            justify-content: space-evenly;  /*横方向（行）の調整 */
+            align-items: center;            /*各アイテムの項さ軸方向の中央に配置(アイテム1つずつの整列)（行間のスペースに関しては無関係） */
+            align-content: flex-start;      /*複数行（ラップされたグループ）の整列(行と行の間や上下の空白を制御する（1行では効果なし）
+) */
+            height: 100vh;
+        }
+        .box1 {
+            height: 300px;
+            order:2;
+            /*
+            flex-grow: 1;
+            flex-shrink: 0;
+            */
+            flex:1 0 300px;
+        }
+        .box2 {
+            order: 3;
+        }
+        .box3 {
+            order:1;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+</html>
