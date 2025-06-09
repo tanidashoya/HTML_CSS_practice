@@ -28,7 +28,9 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-input {
+input[type="text"],
+input[type=email],
+select {
     border:1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
@@ -55,4 +57,59 @@ button {
 
 button:hover {
     background-color: #2980b9;
+}
+
+.required {
+    background-color: #f99;
+    padding:2px 4px;
+    font-size: .8em;
+    border-radius: 2px;
+    margin-left: 4px;
+    color:#fff;
+}
+
+.radio-group {
+    display: flex;
+    gap:1.5rem;
+    margin-top: .5rem;
+}
+
+/* align-items は、Flexbox（flexレイアウト）で交差軸（cross axis）方向の整列位置を指定するプロパティ */
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin:0;
+    gap:.5rem;
+}
+
+.checkbox-group {
+    display:flex;
+    gap:1.5rem;
+    margin-top:.5rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin:0;
+    gap:.5rem;
+    font-weight: normal;
+}
+
+
+
+/* radio-groupクラスのflex-boxの方向を縦にする */
+@media(max-width:680px) {
+    .radio-group {
+        flex-direction: column;
+        gap:.5rem;
+    }
+}
+
+@media(max-width:680px){
+    .checkbox-group {
+        flex-direction: column;
+        gap: .5rem;
+    }
 }
