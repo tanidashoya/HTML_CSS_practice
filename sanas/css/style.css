@@ -1,0 +1,97 @@
+body {
+    font-size: 18px;
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    padding-top: 35px;
+    padding-left: 45px;
+    padding-right: 40px;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    margin-right:30px;
+    gap:30px;
+}
+
+
+/* AIによって出力したけどよくわからん→contactが行方向で中央にできた理由が */
+.navigation {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(42, 42, 42);
+    display: inline-flex;
+    align-items: center;
+    height: 45px;  /* ← 他と高さをそろえるため追加 */
+    font-weight: 450;
+}
+
+.contact {
+    border: 1px solid rgb(255, 15, 0);
+    background-color: rgb(255, 15, 0);
+    border-radius: 9999px;  /* pill型 or 丸く */
+    padding: 0 16px;        /* 横だけにpadding */
+    height: 45px;           /* 他と高さを合わせる */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    font-weight: 600;
+}
+
+.logo {
+    width:180px;
+    height:auto;
+}
+
+.orange-word {
+    color: rgb(255, 15, 0);
+}
+
+.titlebox {
+    padding:0px 70px;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 150px;
+}
+
+h1 {
+    font-family: "Work Sans",sans-serif;
+    font-weight: 320;
+    font-size: 5.5rem;
+    margin-top: 25px;
+}
+
+.titlebox,
+.start-message {
+    margin:0 40px;
+}
+
+.messageAndform {
+    background-color: #f1f1f1;
+    padding: 90px 70px;
+    margin-top: -55px;
+}
+
+form {
+    width:90%;
+}
+
+
+
+form {
+    margin:auto;
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 55px;
+    padding: 60px;
+    border-radius: 4px;
+}
